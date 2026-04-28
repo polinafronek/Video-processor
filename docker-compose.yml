@@ -1,0 +1,11 @@
+services:
+  video-processor-1:
+    build: .
+    ports:
+      - "8080:8080"
+    working_dir: /app
+    volumes:
+      - ./uploads:/app/uploads
+      - ./processed:/app/processed
+      - ./previews:/app/previews
+

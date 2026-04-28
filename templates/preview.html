@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview</title>
+    <link rel="stylesheet" href="../static/styles.css">    
+    <link rel="shortcut icon" href="../static/image/logo.png" type="image/png">
+</head>
+<body>
+    <div id="preview_block">
+        <h1 class="header">PREVIEW</h1>
+        <h4 class="subheader">Processed video with zebra pattern</h4> 
+        <main class="preview-main">
+            <div class="video-container">
+                <h3>PROCESSED VIDEO</h3>
+                <video id="processedVideo" class="video-player" controls width="800">
+                    <source src="" type="video/mp4">
+                    <source src="" type="video/x-msvideo">
+                    Your browser does not support the video tag.
+                </video>
+                <div id="videoInfo"></div>
+            </div>
+            
+            <div class="plot">
+                <h3>BRIGHTNESS ANALYSIS</h3>
+                <img id="BrightnessPlot" class="plot-img" alt="Analysis plot">
+            </div>
+            <div class="preview-controls">
+                <div class="controls-primary">
+                    <a id="downloadLink" class="download-btn" download>
+                        DOWNLOAD
+                    </a> <br>
+                    <a href="/" class="back-btn">
+                        GO BACK
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../static/preview.js"></script>
+</body>
+</html>

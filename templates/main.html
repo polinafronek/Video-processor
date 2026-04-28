@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoProcessor</title>
+    <link rel="stylesheet" href="../static/styles.css">    
+    <link rel="shortcut icon" href="../static/image/logo.png" type="image/png">
+</head>
+<body>
+    <div id="block">
+        <h1 class="header">HIGHLIGHT AND SHADOW PROCESSOR</h1>
+        <h4 class="subheader">This handler will highlight the areas of overexposure and underexposure in the video with a zebra pattern. To do this, select the video file, set the thresholds for overexposure and underexposure, and specify the type of problem to display in the video.</h4>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <div class="upload-section">
+                <div class="file-input-wrapper">
+                    <input type="file" id="videoFile" name="video" accept="video/*" required>
+                    <label for="videoFile" class="file-label">
+                        SELECT VIDEO FILE
+                    </label>
+                </div>
+            </div>
+            <div class="settings">
+                <div class="settings-section">   
+                    <label>WHITE THRESHOLD</label>
+                    <input type="number" id="WhiteThreshold" name="white_threshold"
+                        min="150" max="255" value="230">
+                </div>
+                <div class="settings-section">
+                    <label>BLACK THRESHOLD</label>
+                    <input type="number" id="BlackThreshold" name="black_threshold"
+                        min="0" max="100" value="25">
+                </div>
+                <div class="settings-section">
+                    <label>TYPE OF PROBLEM</label>
+                    <select id="problemType" name="problem_type">
+                        <option value="both">BOTH</option>
+                        <option value="overexposed">OVEREXPOSED ONLY</option>
+                        <option value="underexposed">UNDEREXPOSED ONLY</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="actions-section">
+                <button type="submit" class="submit-btn">
+                    PROCESS VIDEO
+                </button>
+            </div>
+        </form>
+    </div>
+    <script src="../static/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    background-image: url('image/background.jpeg');
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-color: #fef2e7;
+    background-attachment: fixed;
+}
+
+.header, .subheader{
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #000000;
+}
+
+
+#block, #preview_block {
+    background: rgb(255, 240, 222);
+    width: 700px;
+    box-shadow: 5px 30px 20px black;
+    border-radius: 15px;
+}
+
+#preview_block {
+    height: 100vh;
+}
+.upload-section, .settings-section, .actions-section, .video-container, .plot, .preview-controls {
+    background: rgb(255, 240, 222);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px rgb(255, 240, 222);
+    box-shadow: 5px 8px 8px 5px black;
+    text-align: center;
+}
+
+.video-player {
+    width: 100%;
+    max-width: 100%;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+}
+
+
